@@ -1,0 +1,55 @@
+
+.logo{
+    height: 150px;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.card{
+    height: 500px;
+}
+
+.moviecard{
+    height: 100%;
+    position: relative;
+}
+
+.moviecard img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.movtitle{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: blueviolet;
+    padding: 20px;
+    width: 100%;
+}
+
+.movieoverview{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 20px;
+    transform: scale(0);
+    transition: all .7s linear;
+}
+
+.moviecard:hover .movieoverview{
+    transform: scale(1);
+    top: 30%;
+    overflow-y: auto;
+}
+
+.movtitle h3{
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
