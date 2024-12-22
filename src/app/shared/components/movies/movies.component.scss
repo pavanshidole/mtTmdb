@@ -49,11 +49,11 @@
     overflow-y: auto;
 }
 
-// .movtitle h3{
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     white-space: nowrap;
-// }
+.movtitle h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 
 @media  all and (max-width:460px) {
