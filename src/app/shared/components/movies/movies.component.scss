@@ -57,8 +57,7 @@
 
 
 @media  all and (max-width:460px) {
-    .movtitle .row{
-        display: flex;
-        flex-direction: row;
+    .movtitle h3 {
+        font-size: 12px;
     }
 }
