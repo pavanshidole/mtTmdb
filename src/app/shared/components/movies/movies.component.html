@@ -1,14 +1,5 @@
 
-<div class="row mb-5">
-    <div class="col-md-6">
-       <a href="index.html" class="logo">
-        <img src="../movies/assets/imges/imdblogo1.svg" alt="tmdblogo" title="tmdblogo">
-       </a>
-    </div>
-    <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="search...">
-    </div>
-</div>
+
 
 <div class="row">
     <div 
@@ -19,18 +10,18 @@
                 <img src="https://image.tmdb.org/t/p/w500/{{mov.poster_path || mov.backdrop_path}}" alt="">
                 <figcaption>
                     <div class="movtitle">
-                        <div class="row d-flex justify-content-center align-items-center">
-                            <div class="col-10 d-flex">
-                                <h3 class="mb-0 align-self-center">{{mov.title || mov.original_title}}</h3>
+                        <div class="row h-60 d-flex align-itmes-center">
+                            <div class="col-10 ">
+                                <h3 class="mb-0 ">{{mov.title || mov.original_title}}</h3>
                             </div>
-                            <div class="col-2">
+                            <div class="col-2 ">
                                 <span 
                                 [ngClass]="{
                                     'bg-success':mov.vote_average >=7.5,
                                     'bg-warning':mov.vote_average >=5 && mov.vote_average <7.5,
                                     'bg-danger':mov.vote_average <5
                                 }"
-                                class="p-2">{{mov.vote_average}}</span>
+                                class="p-2 ">{{mov.vote_average}}</span>
                             </div>
                         </div>
                     </div>
